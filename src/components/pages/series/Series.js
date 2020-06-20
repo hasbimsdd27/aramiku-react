@@ -1,6 +1,6 @@
 import React from "react";
 import MainLayout from '../../layouts/MainLayout/MainLayout';
-import ItemInfo from "./components/ItemInfo";
+import SeriesItem from "../../layouts/SeriesItem/SeriesItem";
 
 import seriesItems from "../../../data/series.json";
 
@@ -28,7 +28,7 @@ const SeriesPage = () => {
                         <div className="row">
                             {seriesItems.map((item) => {
                                 return (
-                                    <ItemInfo data={item} />
+                                    <SeriesItem data={item} />
                                 );
                             })}
                         </div>

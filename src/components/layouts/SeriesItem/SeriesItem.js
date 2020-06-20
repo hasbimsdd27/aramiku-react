@@ -1,6 +1,6 @@
 import React from "react";
 
-const ItemInfo = ({ data }) => {
+const SeriesItem = ({ data }) => {
     return (
         <article className="col-xl-3 col-md-6 col-sm-12" data-alternate="[Welcome to Demon School! Iruma-kun]" data-anime-id="9215" data-controller="anime-card" data-english="Welcome to Demon School, Iruma-kun" data-native="é&shy;”å…¥ã‚Šã¾ã—ãŸï¼å…¥é–“ãã‚“" data-premiere-precision="4" data-premiere="1578126900" data-romaji="Mairimashita! Iruma-kun" data-target="anime-card-list.card">
             <div className="anime-card">
@@ -85,4 +85,4 @@ const ItemInfo = ({ data }) => {
     );
 }
 
-export default ItemInfo;
+export default SeriesItem;
