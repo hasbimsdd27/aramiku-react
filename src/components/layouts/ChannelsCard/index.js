@@ -1,5 +1,6 @@
 import React from "react";
-import numeral from "numeral";
+import { Numerus } from "components/utils/Numerus";
+import { Seperate } from "components/utils/Separator";
 
 export default (props) => {
   return (
@@ -15,13 +16,13 @@ export default (props) => {
         {props.IsSubscribed ? (
           <div className="channels-card-image-btn">
             <button type="button" className="btn btn-outline-secondary btn-sm">
-              Subscribed <b>{numeral(props.Subscriber).format("0.00 a")}</b>
+              Subscribed <b>{Numerus(props.Subscriber, 2)}</b>
             </button>
           </div>
         ) : (
           <div className="channels-card-image-btn">
             <button type="button" className="btn btn-outline-danger btn-sm">
-              Subscribe <b>{numeral(props.Subscriber).format("0.00 a")}</b>
+              Subscribe <b>{Numerus(props.Subscriber, 2)}</b>
             </button>
           </div>
         )}
@@ -35,7 +36,9 @@ export default (props) => {
               {props.ChannelName}
             </a>
           </div>
-          <div className="channels-view">{props.Subscriber} subscribers</div>
+          <div className="channels-view">
+            {Seperate(props.Subscriber)} subscribers
+          </div>
         </div>{" "}
       </div>
     </>
