@@ -4,33 +4,33 @@ function SideNavbar() {
     return (
         <ul className="sidebar navbar-nav">
             <li className="nav-item">
-                <a className="nav-link" href="index.html">
+                <a className="nav-link" href="/">
                     <i className="fas fa-fw fa-home"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="channels.html">
+                <a className="nav-link" href="/series">
                     <i className="fas fa-fw fa-users"></i>
-                    <span>Channels</span>
+                    <span>Series</span>
                 </a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="single-channel.html">
+                <a className="nav-link" href="/movie">
                     <i className="fas fa-fw fa-user-alt"></i>
-                    <span>Single Channel</span>
+                    <span>Movie</span>
                 </a>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="video-page.html">
                     <i className="fas fa-fw fa-video"></i>
-                    <span>Video Page</span>
+                    <span>Collection</span>
                 </a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="upload.html">
+                <a className="nav-link" href="/">
                     <i className="fas fa-fw fa-cloud-upload-alt"></i>
-                    <span>Upload Video</span>
+                    <span>Season</span>
                 </a>
             </li>
             <li className="nav-item dropdown">
@@ -65,31 +65,6 @@ function SideNavbar() {
                     <a className="dropdown-item" href="categories.html">Music</a>
                     <a className="dropdown-item" href="categories.html">Television</a>
                 </div>
-            </li>
-            <li className="nav-item channel-sidebar-list">
-                <h6>SUBSCRIPTIONS</h6>
-                <ul>
-                    <li>
-                        <a href="subscriptions.html">
-                            <img className="img-fluid" alt="" src="https://askbootstrap.com/preview/vidoe-v1-3/theme-six/img/s1.png" /> Your Life
-                        </a>
-                    </li>
-                    <li>
-                        <a href="subscriptions.html">
-                            <img className="img-fluid" alt="" src="https://askbootstrap.com/preview/vidoe-v1-3/theme-six/img/s2.png" /> Unboxing <span className="badge badge-warning">2</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="subscriptions.html">
-                            <img className="img-fluid" alt="" src="https://askbootstrap.com/preview/vidoe-v1-3/theme-six/img/s3.png" /> Product / Service
-                        </a>
-                    </li>
-                    <li>
-                        <a href="subscriptions.html">
-                            <img className="img-fluid" alt="" src="https://askbootstrap.com/preview/vidoe-v1-3/theme-six/img/s4.png" /> Gaming
-                        </a>
-                    </li>
-                </ul>
             </li>
         </ul>
     );
